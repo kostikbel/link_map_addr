@@ -23,6 +23,7 @@ main(void)
 		exit(1);
 	}
 
-	printf("addr %p name %s dyn %p\n", l->l_addr, l->l_name, l->l_ld);
+	printf("addr %p name %s dyn %p\n", (void *)l->l_addr, l->l_name,
+	    l->l_ld);
 }
 
